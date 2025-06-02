@@ -1,26 +1,34 @@
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import './fifth.less'
+import Bene from '../../../../public/beneoshop.svg'
+import Caspio from '../../../../public/caspio.svg'
+import Hyper from '../../../../public/HyperGrid.svg'
+import Leot from '../../../../public/leotrippi.svg'
+
 function FifthBlock(){
     const settings = {
-        dots: true,
+        autoplay: 1000,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        arrows: false,
     };
     return(
         <main className="fifth">
             <div className="container">
+                <h2>You will be in good Company</h2>
                 <Slider {...settings}>
-                    <div>h1</div>
-                    <div>h2</div>
-                    <div>h3</div>
-                    <div>h4</div>
-                    <div>h5</div>
-                    <div>h6</div>
-                    <div>h7</div>
-                    <div>h8</div>
+                    <div><img src={Bene} alt="" /></div>
+                    <div><img src={Caspio} alt="" /></div>
+                    <div><img src={Hyper} alt="" /></div>
+                    <div><img src={Leot} alt="" /></div>
+                    <div><img src={Bene} alt="" /></div>
+                    <div><img src={Caspio} alt="" /></div>
+                    <div><img src={Hyper} alt="" /></div>
+                    <div><img src={Leot} alt="" /></div>
                 </Slider>
             </div>
         </main>
